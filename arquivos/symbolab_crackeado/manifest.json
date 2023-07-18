@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Symbolab Pro",
+  "description": "Unlocks pro features of Symbolab",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["*://*.symbolab.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "img.png",
+    "default_title": "Symbolab"
+  }
+}
